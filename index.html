@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Limkeni - 71231025 - Personal Web Page</title>
+    <link rel="stylesheet" href="style_2ndfile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="foto.jpg" alt="Profile Picture" class="profile-pic">
+            <h2>Kenya Syalwa Arifia</h2>
+            <h3>@Limkeni</h3>
+        </div>
+        <div class="details">
+            <h4>Details</h4>
+            <p>Samarinda, Kalimantan Timur, Indonesia</p>
+
+            <h4>Skillset</h4>
+            <ol>
+                <li>C++</li>
+                <li>#C</li>
+                <li>HTML</li>
+            </ol>
+            
+            <div class="footer">
+            
+            <button id="change-color">#CHANGE COLOR</button>
+            <script>
+                document.getElementById('change-color').addEventListener('click', function() {
+                    const letters = '0123456789ABCDEF';
+                    let color = '#';
+                    for (let i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                    }
+                    document.body.style.backgroundColor = color;
+                });
+            </script>
+
+            <button id="white">BASE WHITE</button>
+            <script>
+                let body = document.querySelector('body');
+            document.querySelector('#white').addEventListener('click', function() {
+                body.style.backgroundColor = 'white';
+            });
+            </script>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
